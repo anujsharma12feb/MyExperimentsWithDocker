@@ -7,4 +7,5 @@ With this "myUbuntu.yaml", we can increase the value to a number of user's choic
 ![image](https://user-images.githubusercontent.com/10485246/115953468-5b4d1880-a509-11eb-851a-624baedf7a86.png)
 
 Here's the output:
-![image](https://user-images.githubusercontent.com/10485246/115953477-67d17100-a509-11eb-9725-f4f5577aae64.png)
+![image](https://user-images.githubusercontent.com/10485246/115953506-8899c680-a509-11eb-9798-23da770f038e.png)
+
