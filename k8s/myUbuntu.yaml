@@ -1,0 +1,25 @@
+# Usage of InitContainers for handling sysctl in kubernetes pods.
+apiVersion: v1
+kind: Pod
+metadata:
+  labels:
+    run: my-ubuntu
+  name: my-ubuntu
+spec:
+  initContainers:
+  - name: init-ubuntu
+    image: ubuntu
+    command:
+    - sysctl
+    - -w
+    - net.core.somaxconn=4096
+    securityContext:
+      privileged: true
+      runAsUser: 0
+      runAsNonRoot: False
+  containers:
+  - image: ubuntu
+    name: my-ubuntu
+    command:
+      - "sleep"
+      - "604800"
